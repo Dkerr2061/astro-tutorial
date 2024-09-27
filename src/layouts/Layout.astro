@@ -1,5 +1,6 @@
 ---
 import Header from "../components/Header.astro"
+import Nav from "../components/Nav";
 import { ViewTransitions } from 'astro:transitions';
 interface Props {
 	title: string;
@@ -23,7 +24,8 @@ const { title, image = "/images/unit1.jpg", description = "A community of music 
 		<title>{title}</title>
 	</head>
 	<body class="min-h-screen">
-		<Header/>
+		<Nav client:load/>
+		<!-- <Header/> -->
 		<slot />
 	</body>
 </html>
