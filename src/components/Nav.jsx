@@ -75,7 +75,7 @@ function Nav() {
         </div>
       )}
       {toggled && !matches && (
-        <div className="fixed flex bg-white bottom-0 left-0 w-full h-screen items-center justify-center">
+        <div className="fixed flex bg-white bottom-0 left-0 w-full h-screen items-center justify-center z-40">
           <motion.div
             variants={navMotion}
             animate="visible"
