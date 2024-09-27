@@ -1,0 +1,37 @@
+---
+---
+
+<div class="mx-16">
+  <h1 class="my-24 text-center text-xl font-serif font-bold"> Latest cars and Bikes</h1>
+  <div class="grid gap-6">
+    <img class="responsive-image rounded-lg" src="/WRX1.jpg"/>
+    <img class="responsive-image rounded-lg" src="/WRX2.jpg"/>
+    <img class="responsive-image rounded-lg" src="/CBR.JPG"/>
+    <img class="responsive-image rounded-lg" src="/Z1000.JPG"/>
+    <img class="responsive-image rounded-lg" src="/GSXR.JPG"/>
+  </div>
+</div>
+
+
+<style>
+  .responsive-image {
+    width: 100%; /* Ensure the image takes full width of the container */
+    max-width: 600px; /* Set a maximum width for larger screens */
+    height: auto; /* Automatically adjust height to maintain aspect ratio */
+  }
+
+  @media (max-width: 768px) {
+    .mx-12 {
+      margin: 0; /* Adjust margins for smaller screens */
+    }
+    .responsive-image {
+      max-width: 100%; /* Ensure it scales down on smaller screens */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .text-3xl {
+      font-size: 1.5rem; /* Smaller text size on very small screens */
+    }
+  }
+</style>
