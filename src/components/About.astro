@@ -49,7 +49,7 @@
   </div>
   </div>
   <div class="relative">
-    <img class="h-full rounded-lg" src='/STI.jpg' alt="sti"/>
+    <img class="h-fit rounded-lg lg:h-full" src='/STI.jpg' alt="sti"/>
   </div>
 </div>
 
@@ -88,9 +88,9 @@ import { sequence } from "astro:middleware"
       setTimeout(() => incrementCounter(selector, current, target, duration), stepTime)
     }
   }
-  incrementCounter('gallery-counter',0, 4000, 2000)
-  incrementCounter('review-counter', 0, 150, 2000)
-  incrementCounter('blog-counter', 0, 92, 2000)
+  incrementCounter('gallery-counter',0, 4000, 1000)
+  incrementCounter('review-counter', 0, 150, 1000)
+  incrementCounter('blog-counter', 0, 92, 1000)
   
   window.addEventListener('DOMContentLoaded', updatePath)
   window.addEventListener('resize', updatePath)
